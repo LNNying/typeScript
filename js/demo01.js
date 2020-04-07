@@ -31,3 +31,34 @@ function run1() {
     return 1;
 }
 //never 类型 是null undefined  子类型 觉得不会出现的类型
+// 方法  默认返回值为void 
+function runs(name, age) {
+}
+// 匿名方法
+var fun = function () {
+};
+var funs = function (info) {
+    console.log(info.age);
+};
+funs({ name: '123', age: 23 });
+// 默认参数
+var fund = function (name) {
+    if (name === void 0) { name = '23434'; }
+    console.log(name);
+};
+// 剩余参数  类型为数组 必须放在所有参数之后
+var funr = function (name) {
+    var result = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        result[_i - 1] = arguments[_i];
+    }
+    console.log(result);
+};
+function funf(str) {
+    if (typeof str === 'string') {
+        return '1';
+    }
+    else {
+        return 1;
+    }
+}
