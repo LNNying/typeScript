@@ -62,3 +62,21 @@ function funf(str) {
         return 1;
     }
 }
+var arrInter = [{ name: '', age: 10 }, { name: '', age: 13 }];
+function f() { }
+;
+// 方法的参数必须与inter2括号参数一致
+var fung = function (name, age) {
+    return false;
+};
+var arre = ['23', '23', '23'];
+console.log(arre);
+console.log(arre.length);
+var infod = /** @class */ (function () {
+    function infod(dateTime, name, age) {
+        this.dateTime = dateTime;
+        this.name = name;
+        this.age = age;
+    }
+    return infod;
+}());

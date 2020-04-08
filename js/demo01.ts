@@ -79,3 +79,53 @@ function funf(str:any):any{
         return 1
     }
 }
+
+let arrInter: inter[] = [{name: '', age: 10},{name: '', age: 13}]
+
+function f(){};
+
+// 相当于一个方法
+interface inter2 {
+    (name:string, age: number): boolean
+}
+// 方法的参数必须与inter2括号参数一致
+let fung : inter2 = function(name: string, age: number) {
+    return false;
+}
+
+// 接口中定义数组
+interface inters {
+    [index: number] : string, // 数组数据   这样的接口应该不能有其他变量
+    length: number // 数组的长度
+}
+let arre:inters = ['23','23','23']
+console.log(arre)
+console.log(arre.length)
+
+/**
+ * 像[{},{},{}] 的集合
+ * 可以通过把接口当做一个类型声明一个数组如 ler arr : interr[] = [] 
+ */
+
+ /**
+  * class中实现接口implements 和java差不多
+  * 实现接口的变量 的class必须有一个构造器
+  */
+
+  interface intery {
+      dateTime: Date,
+      name: string,
+      age: number
+  }
+
+  class infod  implements intery{
+    dateTime: Date
+    name: string
+    age: number
+    constructor(dateTime:Date, name:string, age:number) {
+        this.dateTime = dateTime
+        this.name = name
+        this.age = age
+    }
+
+  }
